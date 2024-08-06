@@ -1,0 +1,20 @@
+@media screen and (max-width:576px){
+    .container{
+        width: 90%;
+    }
+    #header{
+        flex-direction: column;
+    }
+    .header_left h1{
+        font-size: 2.5rem;
+        line-height: 3.125rem;
+    }
+    .header_left  p{
+        margin-block: 0.94rem;
+    }
+.right_overly_card_wrapper{
+    transform: scale(0.5);
+        bottom: -27px;
+        left: 4%;
+    }
+}

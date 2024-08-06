@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Manrope", sans-serif;
+}
+
+:root {
+    --primary: #FF0000;
+    --secondary: #FF8938;
+    --gray-1: #1C1C1C;
+    --gray-2: #777777;
+    --gray-3: #494949;
+    --gray-4: #D2D2D2;
+    --white: #FFFFFF;
+    --white-light: #F4F4F4;
+}
+
+h1{
+    color: var(--gray-1);
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 6.25rem;
+}
+p{
+    color: var(--gray-2);
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.875rem;
+}
+.container {
+    max-width: 1600px;
+    width: 80%;
+    margin-inline: auto;
+}
+.description{
+    color: var(--gray-2);
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.875rem;
+}
+.btn{
+    border: none;
+    outline: none;
+    font-size: 1.25rem;
+    font-weight: 700;
+    border-radius: 0.625rem;
+    padding: 1.125rem 1.25rem;
+    background:linear-gradient(275deg, rgba(255,0,0,1) 0%, rgba(255,137,56,1) 35%); 
+    color: var(--white);
+    text-decoration: none;
+    cursor: pointer;
+}
+.btn:hover{
+    background:linear-gradient(75deg, rgba(255,0,0,1) 0%, rgba(255,137,56,1) 35%); 
+}
+/* Header start here */
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-block: 4.30rem;
+}
+.header_left h1{
+    max-width: 40rem;
+}
+.header_left p{
+    max-width: 32rem;
+    margin-block: 1.88rem;
+}
+.header_left button span img{
+    vertical-align: baseline;
+    margin-left: 0.62rem;
+}
+.right_img_wrapper{
+    position: relative;
+}
+.right_img_wrapper img{
+    width: 100%;
+}
+.right_overly_card_wrapper img{
+    width: 100%;
+    vertical-align: middle;
+}
+
+.right_overly_card_wrapper h2{
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+.right_overly_card_wrapper{
+    border-radius: 0.625rem;
+    background-color: var(--white);
+    max-width: 18rem;
+    box-shadow: 0px 7px 50px 0px rgba(0, 0, 0, 0.06);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.80rem;
+    padding: 1.75rem;
+    position: absolute;
+    bottom: -2%;
+    left: 12%;
+}
+/* Header end here */
