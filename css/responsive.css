@@ -2,6 +2,7 @@
     .container{
         width: 90%;
     }
+    /* Header start */
     #header{
         flex-direction: column;
     }
@@ -12,9 +13,24 @@
     .header_left  p{
         margin-block: 0.94rem;
     }
+    .btn{
+        font-size: 1rem;
+ 
+        padding: 1rem 1rem;
+    }
+    .right_img_wrapper {
+        margin-top: 20px;
+    }
 .right_overly_card_wrapper{
     transform: scale(0.5);
         bottom: -27px;
         left: 4%;
     }
+        /* Header end */
+/*  Featured products start here*/
+.featured_products_wrap{
+    grid-template-columns: repeat(1, 1fr);
+}
+/*  Featured products ends here*/
+
 }

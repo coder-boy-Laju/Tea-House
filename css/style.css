@@ -35,11 +35,19 @@ p{
     width: 80%;
     margin-inline: auto;
 }
+section{
+    margin-block: 6.25rem;
+}
 .description{
     color: var(--gray-2);
     font-size: 1.125rem;
     font-weight: 500;
     line-height: 1.875rem;
+}
+.title{
+    color: var(--gray-1);
+    font-size: 2.825rem;
+    font-weight: 800;
 }
 .btn{
     border: none;
@@ -104,3 +112,44 @@ p{
     left: 12%;
 }
 /* Header end here */
+
+/* featured start */
+.featured{
+ text-align: center;
+}
+.featured_titel p {
+    max-width: 56rem;
+    margin-inline: auto;
+    margin-top: 1.25rem;
+}
+.featured_products_wrap{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 3.12rem;
+    gap: 1.5rem;
+    place-items: center;
+}
+.featured_product{
+    border-radius: 0.625rem;
+    background: linear-gradient(180deg, #F4F4F4 0%, rgba(244, 244, 244, 0.00) 100%);
+    text-align: center;
+    padding: 1.88rem;
+}
+
+.featured_product h3{
+    color: var(--gray-1);
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin: 1.88rem 0 0.62rem 0;
+}
+
+.featured_product p{
+    color: var(--gray-2);
+    font-size: 1rem;
+    font-weight: 600;
+    max-width: 13rem;
+    margin-inline: auto;
+    margin-top: 1.25rem;
+}
+
+/* featured end */
