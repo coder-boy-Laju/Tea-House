@@ -2,6 +2,9 @@
     .container{
         width: 90%;
     }
+    section{       
+         margin-block: 2.135rem;
+        }
     /* Header start */
     #header{
         flex-direction: column;
@@ -32,5 +35,14 @@
     grid-template-columns: repeat(1, 1fr);
 }
 /*  Featured products ends here*/
+
+/* Present start here */
+.present{
+ flex-direction: column;
+}
+.present_image{
+    order: 2;
+}
+/* Present ends  here */
 
 }
