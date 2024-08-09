@@ -29,12 +29,11 @@
         bottom: -27px;
         left: 4%;
     }
-        /* Header end */
+
 /*  Featured products start here*/
 .featured_products_wrap{
     grid-template-columns: repeat(1, 1fr);
 }
-/*  Featured products ends here*/
 
 /* Present start here */
 .present{
@@ -43,6 +42,32 @@
 .present_image{
     order: 2;
 }
-/* Present ends  here */
 
+/*client start here  */
+
+.client{
+    flex-direction: column;
+    width: 100%;
+padding: 0.5rem;
+}
+.client_contant{
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+}
+.client .client_contant::after{
+    display: none;
+}
+.client_card{
+    transform: scale(0.9);
+   padding: 1.625rem !important;
+}
+.client_cards_wrap .client_card:nth-child(1){
+    display: none;
+}
+.client_cards_wrap .client_card:nth-child(3){
+    display: none;
+}
 }

@@ -49,6 +49,9 @@ section{
     font-size: 2.825rem;
     font-weight: 800;
 }
+/* a,button{
+    text-decoration: none;
+} */
 .btn{
     border: none;
     outline: none;
@@ -58,11 +61,28 @@ section{
     padding: 1.125rem 1.25rem;
     background:linear-gradient(275deg, rgba(255,0,0,1) 0%, rgba(255,137,56,1) 35%); 
     color: var(--white);
-    text-decoration: none;
     cursor: pointer;
 }
 .btn:hover{
     background:linear-gradient(75deg, rgba(255,0,0,1) 0%, rgba(255,137,56,1) 35%); 
+}
+.btn_secondary{
+    background:#FFFFFF;
+    font-size: 1.25rem;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    padding: 0.85rem 1.75rem;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+.btn_secondary:hover {
+    background: linear-gradient(90deg, var(--primary) 10%, var(--secondary) 90%);
+    background-clip: inherit;
+    -webkit-text-fill-color: var(--white);
+    border-color: var(--white);
 }
 /* Header start here */
 #header{
@@ -219,6 +239,113 @@ width: 100%;
     line-height: 1.75rem;
 
 }
-
-
 /* Present end */
+
+/* Clinet start  */
+.client{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(270deg, var(--primary) 0%, var(--secondary) 100%);
+    padding: 4.38rem;
+    border-radius: 0.625rem;
+    position: relative;
+    min-height: 50rem;
+}
+
+.client_contant h2{
+    color: var(--white-light);
+    max-width: 24rem;
+}
+.client_contant p{
+    color: var(--white-light);
+    max-width: 27.5rem;
+    margin: 1.25rem 0 1.88rem 0;
+}
+.client .client_contant::after {
+    content: "";
+    width: 325px;
+    height: 337px;
+    background-image: url(../images/bg_cup.png);
+    background-size: cover;
+    position: absolute;
+    bottom: 5%;
+    left: 16%;
+}
+.client_cards_wrap {
+    position: relative;
+}
+
+.client_cards_wrap .client_card:nth-child(1) {
+    position: absolute;
+    top: -58%;
+    right: -28%;
+    z-index: 1;
+    opacity: 0.4;
+    cursor: default;
+}
+
+.client_cards_wrap .client_card:nth-child(1) p::selection,
+.client_cards_wrap .client_card:nth-child(1) h3::selection {
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.client_cards_wrap .client_card:nth-child(2) {
+    position: relative;
+    z-index: 3;
+}
+
+.client_cards_wrap .client_card:nth-child(3) {
+    position: absolute;
+    bottom: -58%;
+    right: -28%;
+    z-index: 2;
+    opacity: 0.4;
+    cursor: default;
+}
+
+.client_cards_wrap .client_card:nth-child(3) p::selection,
+.client_cards_wrap .client_card:nth-child(3) h3::selection {
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.client_cards_wrap .client_card {
+    position: relative;
+    background-color: var(--white);
+    border-radius: 0.5rem;
+    padding: 3.25rem;
+}
+
+.client_cards_wrap .client_card .client_image:nth-child(1) {
+    position: absolute;
+    top: -10%;
+    left: -5%;
+    padding: 0.25rem;
+    background-color: var(--white);
+    border-radius: 50%;
+}
+
+.client_cards_wrap .client_card .client_image:nth-child(1) img {
+    vertical-align: middle;
+    width: 100%;
+}
+
+.client_cards_wrap .client_card .client_image:nth-child(5) {
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+}
+.client_card h3{
+    font-size: 1rem;
+    color: var(--gray-1);
+    margin: 1.25rem 0 0 0;
+}
+.client_card p{
+    max-width: 22rem;
+}
+
+/* Clinet end  */
